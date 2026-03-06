@@ -42,3 +42,16 @@ const writeFile = async () => {
 };
 
 writeFile();
+
+// appendFile()
+const appendFile = async () => {
+  try {
+    const data = "\nappend this!";
+    await fs.appendFile("text.txt", data, "utf-8");
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+appendFile();
+readFile();
