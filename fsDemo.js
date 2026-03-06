@@ -30,3 +30,15 @@ const readFile = async () => {
 };
 
 readFile();
+
+// writeFile()
+const writeFile = async () => {
+  try {
+    const data = "Hello file?!";
+    await fs.writeFile("new.txt", data, "utf-8");
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+writeFile();
